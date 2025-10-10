@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "412001f5-0268-48ad-b916-c3d9b091b727",
+		"name": "Kampus API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "49159863",
+		"_collection_link": "https://anisamliaa2-3727622.postman.co/workspace/1b8856d8-61b6-4245-8e9a-d4081c1c0032/collection/49159863-412001f5-0268-48ad-b916-c3d9b091b727?action=share&source=collection_link&creator=49159863"
+	},
+	"item": [
+		{
+			"name": "GET - All Students",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"students"
+					]
+				},
+				"description": "Menampilkan semua data mahasiswa dari tabel students"
+			},
+			"response": []
+		},
+		{
+			"name": "POST - Add Student",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"John Doe\",\r\n  \"major\": \"Informatika\",\r\n  \"age\": 22\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"students"
+					]
+				},
+				"description": "Menambahkan data mahasiswa pada tabel students"
+			},
+			"response": []
+		},
+		{
+			"name": "GET - Student by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/students/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"students",
+						"2"
+					]
+				},
+				"description": "Menampilkan data mahasiswa berdasarkan ID"
+			},
+			"response": []
+		},
+		{
+			"name": "PUT - Update Student",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"John Doe\",\r\n  \"major\": \"Sistem Informasi\",\r\n  \"age\": 20\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/students/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"students",
+						"2"
+					]
+				},
+				"description": "Memperbarui data mahasiswa"
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE - Remove Student",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/students/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"students",
+						"2"
+					]
+				},
+				"description": "Menghapus data mahasiswa berdasarkan ID"
+			},
+			"response": []
+		}
+	]
+}
