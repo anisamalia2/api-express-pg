@@ -35,15 +35,17 @@ Fungsi utamanya mencakup operasi CRUD (Create, Read, Update, Delete), dan seluru
 
 # D. Cara Menjalankan Project
   1. Clone Repository
+     
     ```bash
-    git clone https://github.com/USERNAME/api_express_pg.git
+    git clone (https://github.com/anisamalia2/api-express-pg).git
     cd api_express_pg
     ```
-  2. Install Dependencies
+  3. Install Dependencies
+     
     ```bash
     npm install
     ```
-  3. Buat File `.env`
+  5. Buat File `.env`
      
     Isi file `.env` dengan konfigurasi berikut:
     ```bash
@@ -99,4 +101,5 @@ Fungsi utamanya mencakup operasi CRUD (Create, Read, Update, Delete), dan seluru
     PUT     http://localhost:5000/api/students/:id
     DELETE  http://localhost:5000/api/students/:id
     ```
+
 
