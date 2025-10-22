@@ -27,8 +27,8 @@ C. Persiapan Database
   
   CREATE TABLE students (
     id SERIAL PRIMARY KEY,
-    name VARCHAR(100),
-    major VARCHAR(100),
+    name VARCHAR(100) NOT NULL,
+    major VARCHAR(50),
     age INT
   );
   ```
@@ -96,4 +96,5 @@ F. Pengujian Menggunakan Postman
     PUT     http://localhost:5000/api/students/:id
     DELETE  http://localhost:5000/api/students/:id
     ```
+
 
